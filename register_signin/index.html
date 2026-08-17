@@ -15,11 +15,25 @@
               <input type="email" name="email" placeholder="Email" required>
               <input type="Password" name="Password" placeholder="Password" required>
               <button type="submit" name="sign-in">Sign-in</button>
-              <p>Don't have an account? <a href="#" onclick="">Register</a></p>
+              <p>Don't have an account? <a href="#" onclick="showForm('signup-form')">Sign-up</a></p>
 
             </form>
         </div>
+
+        <div class="form-box" id="signup-form">
+            <form action="">
+                <h2>Sign-up</h2>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" name="enter">Enter</button>
+                <p>Already have an account? <a href="#" onclick="showForm('signin-form')">Sign-in</a></p>
+            </form>
+        </div>
     </div>
+
+
+    <script src="script.js"></script>
 
 
 
